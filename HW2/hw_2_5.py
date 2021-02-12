@@ -33,3 +33,4 @@ print('')
 
 for i in range(5):
     print(price_norm(new_price[i]), end = ' ')
+ 

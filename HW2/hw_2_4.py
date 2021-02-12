@@ -8,4 +8,3 @@ for key, i in enumerate(a):
 #   msg='Привет {n} !'.format(n=name[0].title())
     msg = f'Привет {name[0].title()}!'
     print(msg)
- 
