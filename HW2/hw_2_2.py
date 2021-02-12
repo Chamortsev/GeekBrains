@@ -13,13 +13,13 @@ c=''
 # text = ''.join(a)
 # print(text)
 for key,i in enumerate(a):
-    if (i[0] == '+'):
+    if i[0] == '+':
         b = i.replace('+','')
         c = '+'
     else:
         b = i
-    if(b.isdigit() == True ):
-        if (len(b) == 1):
+    if b.isdigit():
+        if len(b) == 1:
             msg = f'"{c}0{b}"'
             print(msg, end=' ')
             #print('"' + c + '0' + b + '"', end=' ')

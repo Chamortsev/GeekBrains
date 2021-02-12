@@ -4,7 +4,7 @@ import random
 def price_norm(n):
     r = round(n)
     k = round(n % 1)
-    if (len(str(k)) == 1):
+    if len(str(k)) == 1:
         k = '0' + str(k)
     else:
         k = str(k)
