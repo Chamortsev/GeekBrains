@@ -13,7 +13,7 @@ c=''
 # text = ''.join(a)
 # print(text)
 for key,i in enumerate(a):
-    if i[0] == '+':
+    if i[0] == '+' or i[0] == '-':
         b = i.replace('+','')
         c = '+'
     else:
