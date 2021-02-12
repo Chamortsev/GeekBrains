@@ -6,7 +6,7 @@ numbers = []
 
 for i in range(a):
     z = i / 2
-    if (int(z) * 2 != i):
+    if int(z) * 2 != i:
         numbers.append(i)
 
 print('Cумма цифр которых делится нацело на 7')
