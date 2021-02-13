@@ -11,7 +11,7 @@ for i in range(a):
 
 print('Cумма цифр которых делится нацело на 7')
 for key, number in enumerate(numbers):
-    q = number ** 3 # Умножаем
+    q = number ** 3  # Умножаем
     w = len(str(q))
     temp = 0
     for i in range(w):
