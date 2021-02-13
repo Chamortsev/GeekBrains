@@ -1,8 +1,8 @@
-a = int(input(i))
-#a = 5
+a = int(input())
+# a = 5
 if a == 1:
-    print (str(a) + ' процент')
+    print(str(a) + ' процент')
 elif 2 <= a <= 4:
-    print (str(a) + ' процента')
+    print(str(a) + ' процента')
 elif a > 4:
-    print (str(a) + ' процентов')
+    print(str(a) + ' процентов')
