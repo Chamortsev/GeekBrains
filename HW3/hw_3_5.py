@@ -6,12 +6,13 @@ nouns = ["автомобиль", "лес", "огонь", "город", "дом"]
 adverbs = ["сегодня", "вчера", "завтра", "позавчера", "ночью"]
 adjectives = ["веселый", "яркий", "зеленый", "утопичный", "мягкий"]
 
-nounsone = nouns.copy()
-adverbsone = adverbs.copy()
-adjectivesone = adjectives.copy()
+# nounsone = nouns.copy()
+# adverbsone = adverbs.copy()
+# adjectivesone = adjectives.copy()
 
 
 def get_jokes(n, continuemetod):
+    mas=len(nouns)
     """
     Put numbers of Jokes in to function
     Function check continue metod (1- we can use all names in list, 0 - one name can use only one time)
@@ -20,13 +21,13 @@ def get_jokes(n, continuemetod):
      """
     if continuemetod == 1:
         for i in range(n):
-            if i < len(nouns):
-                first = nounsone[randrange(len(nounsone))]
-                second = adverbsone[randrange(len(adverbsone))]
-                third = adjectivesone[randrange(len(adjectivesone))]
-                gf = nounsone.pop(nounsone.index(first))
-                gs = adverbsone.pop(adverbsone.index(second))
-                gt = adjectivesone.pop(adjectivesone.index(third))
+            if i < mas:
+                first = nouns[randrange(len(nouns))]
+                second = adverbs[randrange(len(adverbs))]
+                third = adjectives[randrange(len(adjectives))]
+                gf = nouns.pop(nouns.index(first))
+                gs = adverbs.pop(adverbs.index(second))
+                gt = adjectives.pop(adjectives.index(third))
 
                 print(gf, gs, gt)
             else:
@@ -35,9 +36,9 @@ def get_jokes(n, continuemetod):
     else:
         for i in range(n):
             if i < len(nouns):
-                first = nounsone[randrange(len(nounsone))]
-                second = adverbsone[randrange(len(adverbsone))]
-                third = adjectivesone[randrange(len(adjectivesone))]
+                first = nouns[randrange(len(nouns))]
+                second = adverbs[randrange(len(adverbs))]
+                third = adjectives[randrange(len(adjectives))]
 
                 print(first, second, third)
 
