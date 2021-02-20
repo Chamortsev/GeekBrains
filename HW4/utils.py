@@ -1,4 +1,3 @@
-# Оставляю в таком виде, в 4.5 использую библиотеку для работы с xml
 import requests
 import datetime
 
@@ -32,7 +31,3 @@ def currency_rates(charcode):
         print(float(curse))
     except:
         print(None)
-
-
-currency_rates('USD')
-currency_rates('EUR')
