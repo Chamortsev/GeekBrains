@@ -15,9 +15,9 @@ def currency_rates(argv):
             for carparks in child:
                 if carparks.text == i:
                     val = i
-                    for carparks in child:
-                        if carparks.tag == 'Value':
-                            curs = carparks.text
+                    for carparks_new in child:
+                        if carparks_new.tag == 'Value':
+                            curs = carparks_new.text
                     print(val, curs)
                     count = count + 1
     if count == 0:
