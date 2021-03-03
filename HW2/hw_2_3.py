@@ -13,6 +13,8 @@ a.insert(-3, '"')
 
 text = ' '.join(a)
 
+print(a)
+
 for key, i in enumerate(a):
     if i[0] == '+':
         b = i.replace('+', '')
