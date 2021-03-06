@@ -11,8 +11,8 @@ else:
     hobby_file = 'hobby.csv'
     dict_file = 'users_hobby.txt'
 
-u = sum(1 for l in open(user_file, 'r'))
-h = sum(1 for l in open(hobby_file, 'r'))
+u = sum(1 for s in open(user_file, 'r'))
+h = sum(1 for m in open(hobby_file, 'r'))
 if u < h:
     exit(code=1)
 else:
@@ -20,7 +20,7 @@ else:
         for line in f_users:
             user = line.strip()
             hobby = f_hobby.readline().strip()
-            if hobby=='':
-                hobby=None
-            with open (dict_file, 'a', encoding='utf-8') as f:
-                    f.write(str(user)+ ': '+ str(hobby)+'\n')
+            if hobby == '':
+                hobby = None
+            with open(dict_file, 'a', encoding='utf-8') as f:
+                f.write(str(user) + ': ' + str(hobby) + '\n')
