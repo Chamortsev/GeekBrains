@@ -1,8 +1,10 @@
 import shutil
-root='my_project'
-authapp='authapp/templates'
-value='templates'
-mainapp='mainapp/templates'
+
+root = 'my_project'
+authapp = 'authapp/templates'
+value = 'templates'
+mainapp = 'mainapp/templates'
+
 
 def cop_tree(dir_name):
     try:
@@ -11,6 +13,6 @@ def cop_tree(dir_name):
     except FileExistsError:
         print('Каталог уже существует', root + '/' + value + '/' + dir_name)
 
+
 cop_tree(authapp)
 cop_tree(mainapp)
-
